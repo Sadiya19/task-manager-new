@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
-    <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Task Manager</title>
 </head>
+
 <body>
-    <div class="container">
-        <h1 class="title">Create A New Task</h1>
-        <div class="task-form">
-            <input type="text" id="task-input" placeholder="Add Task details" class="task-input">
-            <button id="add-task-btn" class="add-task-btn">Submit</button>
-        </div>
-        <ul id="task-list" class="task-list"></ul>
-      <center><button id="clear-all-btn" class="clear-all-btn">Clear All</button>
-      </center>
-      
+  <div class="container create-task-sec" id="create-task-sec">
+    <h1 class="title">Create A New Task</h1>
+    <div class="task-form">
+      <input type="text" id="task-input" placeholder="Add Task details" class="task-input">
+      <div class="btn-group">
+        <button id="back-btn" class="back-btn">Go back</button>
+        <button id="add-task-btn" class="add-task-btn">Submit</button>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <ul id="task-list" class="task-list"></ul>
+    <center><button id="clear-all-btn" class="clear-all-btn">Clear All</button>
+    </center>
+
+  </div>
+  <div class="landing-page" id="landing-page">
+    <div class="main-content">
+      <h1 class="title1">Welcome to Simple Task Manager</h1>
+      <p class="tagline">Your Productivity Companion!</p>
+      <button id="create-task">Create New Task</button>
+    </div>
+    <div class="banner-img">
+      <img src="/banne.png" alt="Placeholder Image">
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>

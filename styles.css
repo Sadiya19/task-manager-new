@@ -2,7 +2,7 @@ body {
     background: linear-gradient(to bottom, #6b46c1, #f9a8b6);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; 
+    background-size: cover;
     font-family: Arial, sans-serif;
     color: #333;
 
@@ -19,9 +19,47 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-x: hidden;  
-  overflow-y: auto;
-    max-height: 100vh; 
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.main-content{
+    text-align: center;
+}
+
+#create-task{
+    background-color: #f8cf04;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.title1{
+    font-weight: bolder;
+    color: chartreuse;
+    font-size: 25px;
+}
+
+.tagline{
+    font-size: medium;
+    color: white;
+}
+
+.banner-img{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.banner-img img{
+    height: 400px;
+}
+
+.create-task-sec {
+    display: none;
 }
 
 .title {
@@ -29,10 +67,11 @@ body {
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: bold;
-    cursor: pointer; 
+    cursor: pointer;
     transition: color 0.3s, transform 0.4s;
     font-family: "Montserrat", sans-serif;
 }
+
 .task-form {
     display: flex;
     flex-direction: column;
@@ -48,8 +87,13 @@ body {
     font-size: 16px;
 }
 
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
 .add-task-btn {
-    background-color: #007bff;
+    background-color: #4df804;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -59,6 +103,20 @@ body {
 }
 
 .add-task-btn:hover {
+    background-color: #01df5d;
+}
+
+.back-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-btn:hover {
     background-color: #0056b3;
 }
 
@@ -100,7 +158,7 @@ li {
 }
 
 .expected-completion {
-    flex-grow: 1; 
+    flex-grow: 1;
     margin-right: 10px;
     padding: 5px;
     border: 1px solid #ccc;
@@ -121,8 +179,9 @@ li {
 .complete-btn:hover {
     background-color: #2ca02c;
 }
+
 .clear-all-btn {
-    display: none; 
+    display: none;
     background-color: #ff3333;
     color: #fff;
     border: none;
@@ -138,8 +197,8 @@ li {
     background-color: #cc0000;
 }
 
-p{
-  color: grey;
-  font-size: 13px;
-  margin-top: 20px;
+p {
+    color: grey;
+    font-size: 13px;
+    margin-top: 20px;
 }
